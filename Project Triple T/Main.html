@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<link rel="stylesheet" href="./Style.css" />
+</head>
+<body>
+
+	<div id="big_wrapper">
+		
+		<div id="route_box_container">
+			<div id="route_box">
+				<div class="road" id="road_1">
+					<div class="road_1_car"></div>
+					<div class="road_1_car"></div>
+					<div class="road_1_car"></div>
+					<div class="road_1_car"></div>
+					<div class="road_1_car"></div>
+				</div>
+				<div class="road" id="road_2">
+					<div class="road_2_car"></div>
+				</div>
+				<div class="road" id="road_3">
+					<div class="road_3_car"></div>
+					<div class="road_3_car"></div>
+					<div class="road_3_car"></div>
+					<div class="road_3_car"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="signal_box_container">
+			<div id="signal_box">
+				<div class="signal_color" id="color_red"></div>
+				<div class="signal_color" id="color_yellow"></div>
+				<div class="signal_color" id="color_green"></div>
+			</div>
+			<div id="signal_box_emergency"></div>
+		</div>
+
+	</div>
+
+	<div id="option_box">
+		<input type="button" id="paramedic" class="opt_btn" value="A" onclick="paramedic()" />
+		<input type="button" id="traffic" class="opt_btn" value="B" onclick="traffic()" />
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#big_wrapper{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#route_box_container{
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    top: auto;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#route_box{
+    height: 90%;
+    width: 90%;
+    transform: rotateZ(20deg);
+    margin-left: 20vh;
+    display: inline-flex;
+}
+
+#road_1{
+    height: 50vh;
+    width: 7vh;
+    border: 0.2vh solid black;
+    border-top: 0;
+    border-bottom: 0;
+    overflow: hidden;
+}
+
+.road_1_car{
+    height: 5vh;
+    width: 3vh;
+    border-radius: 1vh 1vh 0 0;
+    margin-left: 2vh;
+    margin-top: 1.3vh;
+    background-color: #4C74C9;
+}
+
+.road_1_car:nth-child(1) {
+    margin-top: 41vh;
+  }
+
+#road_2{
+    height: 50vh;
+    width: 7vh;
+    border: 0.2vh solid black;
+    border-top: 0;
+    border-bottom: 0;
+    margin-left: 30vh;
+}
+
+.road_2_car{
+    height: 5vh;
+    width: 3vh;
+    border-radius: 0 0 1vh 1vh;
+    margin-left: 2vh;
+    margin-top: 1.3vh;
+    background-color: red;
+}
+
+#road_3{
+    height: 60vh;
+    width: 7vh;
+    border: 0.3vh dashed black;
+    border-top: 0;
+    border-bottom: 0;
+    margin-left: -20vh;
+    margin-top: 10vh;
+    transform: rotateZ(-90deg);
+    transform-origin: center left;
+    overflow: hidden;
+}
+
+.road_3_car{
+    height: 5vh;
+    width: 3vh;
+    border-radius: 1vh 1vh 0 0;
+    margin-left: 2vh;
+    margin-top: 1.3vh;
+    background-color: #5F6CAF;
+}
+
+.road_3_car:nth-child(1) {
+    margin-top: 18vh;
+  }
+
+#signal_box_container{
+    height: 60%;
+    width: 40%;
+    position: absolute;
+    top: auto;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signal_box{
+    height: 64%;
+    width: 14vh;
+    background-color: #343A40;
+    border-radius: 1vh;
+}
+
+#signal_box_emergency{
+    height: 30%;
+    width: 30%;
+    margin: 0.5vh;
+    margin-top: -20vh;
+    background-color: #FFB830;
+    border-radius: 1vh;
+    background-image: url('Resources/Change_lane.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotateY(90deg);
+    transform-origin: center left;
+    transition: 0.2s ease-in;
+}
+
+.signal_color{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    margin: 2vh;
+}
+
+#color_red{
+    background-color: #cc3232;
+    opacity: 0.5;
+}
+
+#color_yellow{
+    background-color: #e7b416;
+    opacity: 0.5;
+}
+
+#color_green{
+    background-color: #4CBB17  ;
+    opacity: 0.5;
+}
+
+#option_box{
+    height: 12vh;
+    width: 30%;
+    position: absolute;
+    bottom: 2vh;
+    right: 11%;
+    border-radius: 1vh;
+    background-color: #50CB86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opt_btn{
+    height: 10vh;
+    width: 15vh;
+    margin: 2vh;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 6vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.opt_btn:hover{
+    color: #343A40;
+}
